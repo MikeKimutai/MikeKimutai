@@ -3,8 +3,8 @@ window.addEventListener ("scroll", function(){
     header.classList.toggle ("sticky", window.scrollY > 0);
 });
 const getDate = new Date().getFullYear();
-document.write('&copy; copyright  '+getDate+' '+ 'Design work by Mike Kimutai');
-document.getElementById('Date').display.textAlign = "center";
+console.log(getDate)
+document.getElementById("Date").innerHTML = getDate;
 
 var navlist = document.getElementById("menus");
 var close = document.getElementById("close");

@@ -299,6 +299,12 @@ header.sticky{
     }
     #menus {
         display: block;
+        margin: 10px;
+    }
+    #navlist li a{
+        display: block;
+        background: var(--main-color);
+        height: fit-content;
     }
     .home-img img{
         display: none;
