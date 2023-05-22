@@ -306,6 +306,12 @@ header.sticky{
         background: var(--main-color);
         height: fit-content;
     }
+    #navlist li a:hover{
+        background-color: var(--bg-color);
+    }
+    header{
+        background-color: var(--main-color);
+    }
     .home-img img{
         display: none;
     }
