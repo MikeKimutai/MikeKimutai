@@ -45,6 +45,7 @@ font-size: 20px;
 }
 #navlist li{
 position: relative;
+margin: 10px 0px;
 }
 #navlist a{
     font-size: 20px;
@@ -73,7 +74,7 @@ width: 100%;
 }
 .top-btn{
     display: inline-block;
-    padding: 9px 40px;
+    margin: 0px 10px 0 70px;
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 30px;
@@ -81,7 +82,6 @@ width: 100%;
     letter-spacing: 1px;
     font-size: var(--p-font);
     font-weight: 500;
-    transition: ease .50s;
 }
 section{
     padding: 100px 18%;
@@ -183,8 +183,8 @@ header.sticky{
 }
 .sub-img img{
     max-width: 100%;
-    width: 100px;
-    height: auto;
+    width: 250px;
+    height: 150px;
     margin-bottom: 20px;
 }
 .sub-box h3{
@@ -193,7 +193,7 @@ header.sticky{
     font-weight: 500;
 }
 .sub-box p{
-    font-size: var(--p-font);
+    font-size: 20px;
     color: var(--secound-color);
     line-height: 20px;
 }
@@ -223,7 +223,7 @@ header.sticky{
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px, auto));
-    grid-gap: 3rem;
+    grid-gap: 5rem;
     align-items: center;
     margin-top: 2rem;
     text-align: center;
@@ -297,17 +297,25 @@ header.sticky{
     #navlist{
         display: none;
     }
-    #menus {
+    #menus{
         display: block;
-        margin: 10px;
+        top: 0;
+        margin-bottom: auto;
+        /* margin: 10px; */
     }
     #navlist li a{
         display: block;
         background: var(--main-color);
         height: fit-content;
+        line-height: 8px;
     }
     #navlist li a:hover{
         background-color: var(--bg-color);
+        content: none;
+    }
+    .top-btn:hover{
+background: #ffffff;
+margin-left: auto;
     }
     header{
         background-color: var(--main-color);
@@ -317,6 +325,9 @@ header.sticky{
     }
     .portfolio-content img{
         display: flex;
+    }
+    .items{
+        font-size: larger;
     }
     .col{
         display: grid;
